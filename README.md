@@ -39,23 +39,23 @@ Option 2 — Serve with Python (recommended to avoid CORS quirks)
 
 bash
 Python 3
-python3 -m http.server 5000
+python3 -m http.server 8080
 
 Python 2
-python -m SimpleHTTPServer 5000
+python -m SimpleHTTPServer 8080
 
 
-Then open http://localhost:5000 in your browser.
+Then open http://localhost:8080 in your browser.
 
  Option 3 — Serve with Node.js
 
 bash
 npx serve .
 or
-npx http-server . -p 5000
+npx http-server . -p 8080
 
 
-Then open http://localhost:5000.
+Then open http://localhost:8080.
 
 
 Option 4 — VS Code Live Server
@@ -74,8 +74,8 @@ Click one of the four tabs at the top:
 - Priority Scheduling — enter a priority number (1 = highest priority)
 - Round Robin — set the time quantum (default: 2 ms)
 
-### 2. Add Processes
-Fill in the fields and click **+ Add Process**:
+2. Add Processes
+Fill in the fields and click + Add Process:
 
 | Field | Description |
 |---|---|
@@ -109,7 +109,7 @@ Shortest Job First (SJF)
 Priority Scheduling
 - Each process is assigned a priority (1 = highest).
 - The highest-priority ready process runs next; ties broken by arrival time.
-- Non-preemptive. Low-priority processes may suffer **starvation**.
+- Non-preemptive. Low-priority processes may suffer starvation.
 
 Round Robin (RR)
 - Each process gets a fixed time quantum in cyclic order.
